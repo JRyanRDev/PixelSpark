@@ -53,36 +53,74 @@ div#header-wrapper {
     align-items: center;
     justify-content: space-evenly;
     gap: 120px;
-
+    
     margin: 0 auto;
     width: 100vw;
+}
+
+div#header-menu {
+    display: none;
+    transition: all .5s ease;
+    padding: 5px;
+}
+
+form#search-form {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    border: 2px solid var(--cor5);
+    border-radius: 2px;
+}
+
+form#search-form span {
+    padding: 5px;
+    color: var(--cor5);
+}
+
+.sign-create {
+    padding: 4px;
+    background-color: var(--cor5);
+    font-weight: bold;
+    color: var(--cor2);
+    border: 1px solid var(--cor1); 
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+.sign-create:hover {
+    cursor: pointer;
+    border: 1px solid var(--cor5);
+    background-color: var(--cor2);
+    color: var(--cor5);
 }
 
 menu nav {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 menu nav ul {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     list-style: none;
 }
 
 menu nav ul li {
     padding: 4px;
-    border-top: 1px solid var(--cor4); 
-    border-bottom: 1px solid var(--cor4);
+    border: 2px solid var(--cor5);
+    border-radius: 2px;
 
     width: 100%;
-    text-align: center;
+    text-align: left;
 
     background-color: var(--cor2);
-    color: var(--cor4);
+    color: var(--cor5);
 }
 
 menu nav ul li:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     color: var(--cor2);
     cursor: pointer;
 }
@@ -94,29 +132,7 @@ menu nav a {
     font-weight: bold;
 }
 
-div#header-menu {
-    display: none;
-    transition: all .5s ease;
-}
 
-header button#sign-button {
-    padding: 4px;
-    background-color: var(--cor5);
-    font-weight: bold;
-    color: var(--cor2);
-    border-top: 1px solid var(--cor5); 
-    border-bottom: 1px solid var(--cor5);
-    border-left: none;
-    border-right: none;
-    width: 100%;
-}
-
-header button#sign-button:hover {
-    cursor: pointer;
-    border: 1px solid var(--cor5);
-    background-color: var(--cor2);
-    color: var(--cor5);
-}
 
 span.material-symbols-outlined#menuButton {
     background-color: var(--cor2);
@@ -130,4 +146,11 @@ span.material-symbols-outlined#menuButton:hover {
     background-color: var(--cor5);
     color: var(--cor2);
     cursor: pointer;
+}
+
+div#login-area {
+    width: 100%;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr;
 }
