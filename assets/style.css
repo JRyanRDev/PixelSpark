@@ -1,10 +1,3 @@
-/* 
-Mobile – 320px — 480px
-Tablet – 481px — 768px
-Laptop – 769px — 1024px
-Desktop – 1025px — 1200px
-TV – 1201px and more
-*/
 
 /* versão mobile */
 
@@ -39,31 +32,16 @@ header {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     position: fixed;
-}
-
-div#logo {
-    position: relative;
-    right: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    padding: 10px;
+    width: 100vw;
+    border-bottom: 1px solid var(--cor5);
 }
 
 svg#svg5 {
     width: 200px;
     height: 100px;
+
     transform: scale(2);
-}
-
-div#title {
-    display: flex;
-    font-size: 2rem;
-}
-
-span#spark {
-    font-family: 'Teko', sans-serif;
-    font-weight: bold;
-    color: var(--cor5);
 }
 
 span.material-symbols-outlined#menuButton {
@@ -84,11 +62,13 @@ span.material-symbols-outlined#menuButton:hover {
 div#header-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 60px;
-    
-    margin: 0 auto;
-    width: 100vw;
+}
+
+div#logo {
+    position: relative;
+    right: 40px;
 }
 
 div#header-menu {
@@ -105,20 +85,23 @@ form#search-form {
     border-radius: 2px;
 }
 
-form#search-form span {
-    padding: 5px;
-    color: var(--cor5);
-}
-
-input#iSearch {
-    padding: 0 8px;
-}
-
 div#login-area {
     width: 100%;
     display: grid;
     gap: 2px;
     grid-template-columns: 1fr 1fr;
+}
+
+form#search-form span {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: var(--cor5);
+    text-align: center; 
+}
+
+input#iSearch {
+    padding: 0 8px;
 }
 
 .sign-create {
@@ -146,6 +129,11 @@ menu nav {
     gap: 8px;
 }
 
+div#navbar {
+    display: grid;
+    gap: 10px;
+}
+
 menu nav ul {
     display: flex;
     flex-direction: column;
@@ -166,6 +154,9 @@ menu nav ul a {
 }
 
 menu nav ul a span {
+    display: flex;
+    text-align: center;
+    align-items: center;
     border-top: 1px solid var(--cor5);
     border-left: 1px solid var(--cor5);
     border-bottom: 1px solid var(--cor5);
@@ -179,7 +170,7 @@ menu nav ul li {
     display: flex;
     align-items: center;
 
-    padding: 4px;
+    padding: 8px;
     border: 1px solid var(--cor5);
     border-radius: 0 2px 2px 0;
 
@@ -191,13 +182,13 @@ menu nav ul li {
     transition: all .3s ease;
 }
 
-menu > nav > ul > a:hover > span{
+menu > nav > div#navbar > ul > a:hover > span{
     background-color: var(--cor5);
     color: var(--cor2);
     cursor: pointer;
 }
 
-menu > nav > ul > a:hover > li {
+menu > nav > div#navbar > ul > a:hover > li {
     background-color: var(--cor5);
     color: var(--cor2);
     cursor: pointer;

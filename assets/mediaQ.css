@@ -1,0 +1,83 @@
+/* 
+Mobile – 320px — 480px
+Tablet – 481px — 768px
+Laptop – 769px — 1024px
+Desktop – 1025px — 1200px
+TV – 1201px and more
+*/
+
+/* tablet */
+
+@media (min-width: 800px) {
+
+    svg#svg5 {
+        width: 80px;
+        height: 50px;
+        transform: scale(7);
+    }
+
+    div#header-wrapper {
+        justify-content: start;
+        padding: 60px; 
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    span.material-symbols-outlined#menuButton {
+        display: none;
+    }
+
+    div#header-menu {
+        display: block;
+        margin-top: 80px;
+    }
+
+    div#navbar {
+        display: flex;
+        gap: 10px;
+    }
+
+    div#header-menu nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    menu nav ul {
+        flex-direction: row;
+        grid-area: navbar;
+    }
+
+    menu nav ul a {
+        align-items: center;
+    }
+
+    menu nav ul span {
+        height: 75%;
+    }
+
+    menu nav ul li {
+        border-left: 0;
+        height: 75%;
+    }
+
+    menu nav form#search-form {
+        align-self: center;
+        padding: 2px;
+        display: flex;
+        width: 140px;
+        align-items: center;
+        height: 75%;
+    }
+
+    menu nav form#search-form input#iSearch {
+        width: 90%;
+        height: 30px;
+    }
+
+    div#login-area {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
