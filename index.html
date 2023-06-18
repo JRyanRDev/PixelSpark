@@ -20,7 +20,7 @@
         <div id="header-menu">
             <menu>
                 <nav>
-                    <form action="#" method="get" id="search-form">
+                    <form action="#" method="get" id="search-form" autocomplete="off">
                         <label for="iSearch"><span class="material-symbols-outlined">search</span></label>
                         <input type="text" name="search" id="iSearch">
                     </form>
@@ -37,10 +37,15 @@
                             </a>
                         </div>
                     <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Recente</li></a>
-                        <a href="#"><li>Notícias</li></a>
-                        <a href="#"><li>Artigos || Reviews</li></a>
+                        <a href="#"><span class="material-symbols-outlined">
+                            home
+                            </span><li>Home</li></a>
+                        <a href="#">
+                            <span class="material-symbols-outlined">schedule</span><li>Recente</li></a>
+                        <a href="#">
+                            <span class="material-symbols-outlined">news</span><li>Notícias</li></a>
+                        <a href="#">
+                            <span class="material-symbols-outlined">edit_note</span><li>Artigos || Reviews</li></a>
                     </ul>
                 </nav>
             </menu>

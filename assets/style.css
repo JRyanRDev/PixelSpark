@@ -67,13 +67,17 @@ div#header-menu {
 form#search-form {
     display: grid;
     grid-template-columns: 0.1fr 1fr;
-    border: 2px solid var(--cor5);
+    border: 1px solid var(--cor5);
     border-radius: 2px;
 }
 
 form#search-form span {
     padding: 5px;
     color: var(--cor5);
+}
+
+input#iSearch {
+    padding: 0 8px;
 }
 
 .sign-create {
@@ -107,10 +111,34 @@ menu nav ul {
     list-style: none;
 }
 
+menu nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+menu nav ul a {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+menu nav ul a span {
+    border-top: 1px solid var(--cor5);
+    border-left: 1px solid var(--cor5);
+    border-bottom: 1px solid var(--cor5);
+    border-radius: 2px 0 0 2px;
+    color: var(--cor5);
+    padding: 5px;
+}
+
 menu nav ul li {
+    display: flex;
+    align-items: center;
+
     padding: 4px;
-    border: 2px solid var(--cor5);
-    border-radius: 2px;
+    border: 1px solid var(--cor5);
+    border-radius: 0 2px 2px 0;
 
     width: 100%;
     text-align: left;
@@ -119,20 +147,17 @@ menu nav ul li {
     color: var(--cor5);
 }
 
-menu nav ul li:hover {
+menu > nav > ul > a:hover > span{
     background-color: var(--cor5);
     color: var(--cor2);
     cursor: pointer;
 }
 
-menu nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+menu > nav > ul > a:hover > li {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    cursor: pointer;
 }
-
-
 
 span.material-symbols-outlined#menuButton {
     background-color: var(--cor2);
