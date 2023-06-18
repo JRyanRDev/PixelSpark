@@ -50,9 +50,9 @@ div#logo {
 }
 
 svg#svg5 {
-    width: 220px;
-    height: 110px;
-    transform: scale(2)
+    width: 200px;
+    height: 100px;
+    transform: scale(2);
 }
 
 div#title {
@@ -95,6 +95,7 @@ div#header-menu {
     display: none;
     transition: all .5s ease;
     padding: 5px;
+    margin-top: 30px;
 }
 
 form#search-form {
