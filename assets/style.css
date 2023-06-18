@@ -36,6 +36,7 @@ header {
     background-color: var(--cor2);
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    position: fixed;
 }
 
 div#logo {
@@ -46,6 +47,21 @@ div#logo a {
     color: #fff;
     text-decoration: none;
     font-size: 2rem;
+}
+
+span.material-symbols-outlined#menuButton {
+    background-color: var(--cor2);
+    border: 1px solid var(--cor5);
+    border-radius: 2px;
+    padding: 1px;
+    color: var(--cor5);
+    transition: all .3s ease;
+}
+
+span.material-symbols-outlined#menuButton:hover {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    cursor: pointer;
 }
 
 div#header-wrapper {
@@ -164,20 +180,6 @@ menu > nav > ul > a:hover > span{
 }
 
 menu > nav > ul > a:hover > li {
-    background-color: var(--cor5);
-    color: var(--cor2);
-    cursor: pointer;
-}
-
-span.material-symbols-outlined#menuButton {
-    background-color: var(--cor2);
-    border: 1px solid var(--cor5);
-    border-radius: 2px;
-    padding: 1px;
-    color: var(--cor5);
-}
-
-span.material-symbols-outlined#menuButton:hover {
     background-color: var(--cor5);
     color: var(--cor2);
     cursor: pointer;
