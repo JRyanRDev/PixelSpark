@@ -1,0 +1,240 @@
+/* versão mobile */
+
+header {
+    background-color: var(--cor2);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    position: fixed;
+    width: 100vw;
+    border-bottom: 1px solid var(--cor5);
+}
+
+svg#svg5 {
+    width: 200px;
+    height: 100px;
+
+    transform: scale(2.1);
+}
+
+span.material-symbols-outlined#menuButton {
+    border: 1px solid var(--cor5);
+    border-radius: 2px;
+    padding: 1px;
+    
+    background-color: var(--cor2);
+    color: var(--cor5);
+    transition: all .3s ease;
+}
+
+span.material-symbols-outlined#menuButton:hover {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    
+    cursor: pointer;
+}
+
+div#header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+div#logo {
+    position: relative;
+    right: 40px;
+}
+
+div#header-menu {
+    display: none;
+    transition: all .5s ease;
+    
+    margin-top: 35px;
+    padding: 10px;
+
+    background-color: var(--cor1);
+}
+
+
+div#login-area {
+    width: 100%;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr;
+}
+
+form#search-form {
+    display: grid;
+    grid-template-columns: 0.15fr 1fr;
+    height: 100%;
+}
+
+form#search-form span {
+    display: flex;
+    justify-content: center;
+
+    padding: 5px;
+
+    text-align: center;
+    color: var(--cor5);
+}
+
+input#iSearch {
+    padding: 0 8px;
+    height: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--cor5);
+}
+
+input#iSearch:active, input#iSearch:focus {
+    outline: none;
+}
+
+.sign-create {
+    background-color: var(--cor5);
+    font-weight: bold;
+    color: var(--cor2);
+
+    padding: 4px;
+    border: 1px solid var(--cor1); 
+    border-left: none;
+    border-right: none;
+    width: 100%;
+
+    transition: all .3s ease;
+}
+
+.sign-create:hover {
+    cursor: pointer;
+
+    border: 1px solid var(--cor5);
+
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+
+menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+div#navbar {
+    display: grid;
+    gap: 10px;
+}
+
+menu nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    list-style: none;
+}
+
+menu nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+menu nav ul a {
+    display: grid;
+    align-items: center;
+    width: 100%;
+}
+
+menu nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px;
+    border: 1px solid var(--cor5);
+    border-radius: 2px;
+
+    width: 100%;
+    text-align: left;
+
+    background-color: var(--cor2);
+    color: var(--cor5);
+    transition: all .3s ease;
+}
+
+menu > nav > div#navbar > ul > a:hover > li {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 800px) {
+    
+    div#header-wrapper {
+        justify-content: start;
+        width: 80%;
+
+        padding: 60px; 
+        margin: 0 auto;
+    }
+
+    svg#svg5 {
+        width: 80px;
+        height: 50px;
+        transform: scale(7);
+    }
+    
+    span.material-symbols-outlined#menuButton {
+        display: none;
+    }
+
+    div#header-menu {
+        display: block;
+        margin-top: 80px;
+
+        border-top: 2px solid var(--cor5);
+        border-bottom: 2px solid var(--cor5);
+    }
+
+    div#navbar {
+        display: flex;
+        gap: 10px;
+    }
+
+    div#header-menu nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    menu nav ul {
+        flex-direction: row;
+    }
+
+    menu nav form#search-form {
+        align-self: center;
+        padding: 2px;
+        display: flex;
+        width: 140px;
+        align-items: center;
+        height: 75%;
+    }
+
+    menu nav form#search-form input#iSearch {
+        width: 90%;
+        height: 30px;
+    }
+
+    input#iSearch {
+            background-color: var(--cor2);
+            color: var(--cor5);
+    }
+
+    div#login-area {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
