@@ -4,9 +4,12 @@ header {
     background-color: var(--cor2);
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    position: fixed;
     width: 100vw;
     border-bottom: 1px solid var(--cor5);
+    position: fixed;
+
+    z-index: 1;
+    
 }
 
 svg#svg5 {
@@ -52,7 +55,7 @@ div#header-menu {
     margin-top: 35px;
     padding: 10px;
 
-    background-color: var(--cor1);
+    background-color: var(--cor2);
 }
 
 
@@ -171,6 +174,10 @@ menu > nav > div#navbar > ul > a:hover > li {
 
 
 @media (min-width: 800px) {
+    header {
+        width: 100%;
+        position: static;
+    }
     
     div#header-wrapper {
         justify-content: start;
@@ -192,7 +199,7 @@ menu > nav > div#navbar > ul > a:hover > li {
 
     div#header-menu {
         display: block;
-        margin-top: 80px;
+        margin-top: 68px;
 
         border-top: 2px solid var(--cor5);
         border-bottom: 2px solid var(--cor5);
@@ -237,4 +244,17 @@ menu > nav > div#navbar > ul > a:hover > li {
         flex-direction: column;
     }
     
+}
+
+@media (min-width: 950px) {
+    div#header-menu {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    header {
+        width: 98.8vw;
+    }
 }
