@@ -1,58 +1,111 @@
 main {
     position: relative;
-    top: 13rem;
-    margin: 0 auto;
-    padding: 10px;
+    top: 10rem;
 }
 
-section.image-grid {
-    display: grid;
-    gap: 5rem;
-}
-
-article.post {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
-
-    border-radius: 8px;
-    border: 3px solid var(--cor5);
-    background-color: #fff;
-
-    height: 50vh;
-    width: 70%;
-    justify-self: center;
-
-    overflow: hidden;
-}
-
-div.image-div {
+main > section.features > h1 {
+    transform: translateY(20%);
+    color: var(--cor5);
+    padding: 2rem;
+    font-size: 3rem;
     text-align: center;
+}
+
+main > section.features > button {
+    padding: 0.2rem;
+    border: 2px solid var(--cor5);
+    border-radius: 5px;
+
+    color: var(--cor5);
+    background-color: #000;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 2;
+}
+
+button#previous-button {
+    left: 1rem;
+    right: auto;
+}
+
+button#next-button {
+    left: auto;
+    right: 1rem;
+}
+
+section.carousel {
+    display: flex;
+    gap: 5rem;
+
+    padding: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    height: 70vh;
+
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+section.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+article.blog-post {
+    display: grid;
+    grid-template-rows: 1.2fr 1fr;
+
+    background-color: #fff;
+    
     width: 100%;
+    height: 80%;
+    
+    border: 2px solid var(--cor5);
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+article.blog-post div.post-image {
     background-color: #000;
 }
 
-div.text-div {
+article.blog-post div.post-text {
+    padding: 2rem;
     text-align: center;
-    width: 100%;
     font-family: 'Roboto', sans-serif;
+} 
+
+article.blog-post div.post-text p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
+section.carousel article.current-item {
+    opacity: 1;
+}
 
 @media (min-width: 800px) {
     main {
         top: 0;
     }
 
-    section.image-grid {
+    section.carousel {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
-        gap: 5rem;
 
-        padding: 5rem;
+        height: 65vh;
+        padding: 4rem 8rem;
+
+        overflow: hidden;
     }
 
-    article.post {
-        width: 80%;
+    article.blog-post {
+        height: 75%;
+    }
+
+    main > section.features > button {
+        display: none;
     }
 }
