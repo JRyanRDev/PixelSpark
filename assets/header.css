@@ -59,7 +59,6 @@ div#header-menu {
 
 }
 
-
 div#login-area {
     width: 100%;
     display: grid;
@@ -154,7 +153,7 @@ menu nav ul li {
     align-items: center;
     gap: 10px;
 
-    padding: 8px;
+    padding: 1rem;
     border: 1px solid var(--cor5);
     border-radius: 2px;
 
@@ -171,8 +170,6 @@ menu > nav > div#navbar > ul > a:hover > li {
     color: var(--cor2);
     cursor: pointer;
 }
-
-
 
 @media (min-width: 800px) {
     header {

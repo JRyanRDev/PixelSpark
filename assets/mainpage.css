@@ -62,12 +62,89 @@ article.blog-post div.post-image {
 article.blog-post div.post-text {
     padding: 2rem;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 } 
 
 article.blog-post div.post-text p {
     font-size: 1.2rem;
     margin-top: 1rem;
+}
+
+section#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 5rem;
+    text-align: center;
+}
+
+section#contact form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section#contact p {
+    margin-bottom: 1rem;
+    font-size: large;
+    font-weight: bolder;
+}
+
+section#contact input#iEmail {
+    padding: 1rem;
+    border: 1px solid #000;
+    border-right: none;
+}
+
+section#contact button#send-email {
+    padding: 1rem;
+    border: 1px solid #000;
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+    background-color: var(--cor5);
+}
+
+section#contact button#send-email:hover {
+    cursor: pointer;
+    color: var(--cor5);
+    background-color: #000;
+}
+
+section#extra-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    
+    gap: 3rem;
+
+    align-items: center;
+}
+
+article#top-post {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border: 2px solid var(--cor5);
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+}
+
+article#top-post div#left-side-image {
+    background-color: #000;
+}
+
+article#top-post div#right-side-text {
+    padding: 2rem;
+    text-align: center;
+}
+
+div#extras {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
 }
 
 
@@ -97,5 +174,49 @@ article.blog-post div.post-text p {
     main > section.features > button {
         display: none;
     }
+
+    section#extra-content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    
+        padding: 7rem;
+    
+    }
+    
+    article#top-post {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: none;
+        height: 30rem;
+    
+        border: 2px solid var(--cor5);
+        border-radius: 5px;
+
+        max-width: none;
+        
+        overflow: hidden;
+    }
+    
+    article#top-post div#right-side-text {
+        padding: 7rem;
+        font-size: 1.5rem;
+    }
+    
+    article#top-post div#right-side-text h2 {
+        margin-bottom: 2rem;
+    }
+    
+    article#top-post div#left-side-image {
+        background-color: #000;
+    }
+    
+    div#extras {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
 }
 
