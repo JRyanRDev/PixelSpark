@@ -1,6 +1,6 @@
 footer {
     background-color: var(--cor2);
-    color: #fff;
+    color: var(--cor5);
     width: 100%;
     padding: 5rem;
     margin-top: 10rem;
@@ -11,8 +11,8 @@ div#footer-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid var(--cor5);
+    border-bottom: 1px solid var(--cor5);
     padding: 2rem;
 }
 
@@ -31,11 +31,11 @@ div#footer-content ul {
 
 div#footer-content ul a {
     text-decoration: none;
-    color: #aaa;
+    color: var(--cor5);
 }
 
 div#footer-content ul a:hover {
-    color: #fff;
+    color: var(--cor4);
 }
 
 @media (min-width: 800px) {
