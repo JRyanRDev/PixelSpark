@@ -76,6 +76,8 @@ section#contact {
     width: 100%;
     padding: 5rem;
     text-align: center;
+
+    transform: translateY(-25%);
 }
 
 section#contact form {
