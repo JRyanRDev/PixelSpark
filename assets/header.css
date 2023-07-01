@@ -7,6 +7,7 @@ header {
     
 
     position: fixed;
+    top: 0;
     z-index: 1;
 }
 
@@ -38,12 +39,12 @@ div#header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 60px;
+    gap: 2rem;
 }
 
 div#logo {
     position: relative;
-    right: 40px;
+    right: 3rem;
 }
 
 div#header-menu {
@@ -179,7 +180,7 @@ menu > nav > div#navbar > ul > a:hover > li {
         justify-content: start;
         width: 80%;
 
-        padding: 60px; 
+        padding: 7rem; 
         margin: 0 auto;
     }
 

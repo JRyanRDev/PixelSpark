@@ -3,7 +3,9 @@ footer {
     color: var(--cor5);
     width: 100%;
     padding: 5rem;
-    margin-top: 10rem;
+    position: relative;
+    bottom: 0;
+    margin-top: 5rem;
 }
 
 div#footer-content {
@@ -40,7 +42,7 @@ div#footer-content ul a:hover {
 
 @media (min-width: 800px) {
     footer {
-        margin-top: 0;
+        margin-top: 5rem;
     }
 
     footer h3 {
