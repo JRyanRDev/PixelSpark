@@ -32,8 +32,8 @@ article.recent-post {
     border-radius: 2px;
 
     display: grid;
-    grid-template-columns: 0.5fr 1.2fr;
-    gap: 1rem;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 2rem;
     align-items: center;
 
     min-height: 100px;
@@ -67,5 +67,9 @@ section#recent-content h2 {
 @media (min-width: 800px) {
     main {
         margin-top: 3rem;
+    }
+
+    article.recent-post {
+        grid-template-columns: 0.5fr 1fr;
     }
 }
