@@ -1,24 +1,9 @@
-main {
-    margin-top: 12rem;
-}
 
 main > h1 {
     color: var(--cor5);
     padding: 2rem;
     font-size: 3rem;
     text-align: center;
-}
-
-section#recent-content {
-    background-color: #fff;
-
-    width: 80vw;
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding: 3rem;
-    border-radius: 2px;
-    
-    box-shadow: 0 0 2px #0000008e;
 }
 
 section#recent-content a {
@@ -65,9 +50,6 @@ section#recent-content h2 {
 }
 
 @media (min-width: 800px) {
-    main {
-        margin-top: 3rem;
-    }
 
     article.recent-post {
         grid-template-columns: 0.5fr 1fr;
