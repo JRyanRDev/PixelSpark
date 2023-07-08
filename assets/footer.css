@@ -48,6 +48,7 @@ div#footer-content ul a:hover {
     footer h3 {
         text-align: left;
     }
+    
     div#footer-content {
         display: flex;
         flex-direction: row;
