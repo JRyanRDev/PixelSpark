@@ -52,6 +52,8 @@ article.blog-post {
     
     border: 2px solid var(--cor5);
     border-radius: 5px;
+
+    overflow: hidden;
 }
 
 article.blog-post div.post-image {

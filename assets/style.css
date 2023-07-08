@@ -46,6 +46,34 @@ section.container {
     box-shadow: 0 0 2px #0000008e;
 }
 
+div.filter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    border-radius: 2px;
+    overflow: hidden;
+
+    background-color: #ccc;
+}
+
+div.filter span {
+    width: 20%;
+    text-align: center;  
+    padding: 1rem;  
+}
+
+div.filter form {
+    width: 80%;
+}
+
+div.filter input#iFilter {
+    width: 100%;
+    height: 5rem;
+
+}
+
+
 @media (min-width: 800px) {
     main {
         margin-top: 3rem;

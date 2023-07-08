@@ -50,8 +50,14 @@ section#recent-content h2 {
 }
 
 @media (min-width: 800px) {
+    section.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        gap: 1rem;
+    }
 
     article.recent-post {
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 0.4fr 1fr;
     }
 }

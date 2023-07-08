@@ -20,15 +20,5 @@ menuButton.addEventListener("click", () => {
     }
 })
 
-window.addEventListener("scroll", () => {
-    if(window.scrollY >= header_height) {
-        menu.classList.add("sticky");
-    }
-    else {
-        menu.classList.remove("sticky");
-        
-    }
-})
-
 
 
