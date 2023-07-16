@@ -1,8 +1,9 @@
-div#articles {
+div#content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 5rem;
-}
+    gap: 2rem;
+    max-width: 3fr;
+  
+  }
 
 article.post {
     display: flex;
@@ -17,11 +18,16 @@ article.post {
 article.post div.image-space {
     height: 20rem;
     width: 100%;
-    max-width: 350px;
     
     background-color: #000;
 }
 
 article.post div.title-space {
     padding: 1rem;
+}
+
+@media (min-width: 800px) {
+    div#content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 }
