@@ -30,18 +30,20 @@ div#content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-
+  
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 2px;
-}
+    
+  }
 
 article.extra-article {
     display: flex;
     gap: 1rem;
     align-items: center;
-    border: 1px solid var(--cor5);
+    box-shadow: 1px 1px 8px #00000068;
     height: 80px;
+    transition: all .3s ease-in-out;
 }
 
 article.extra-article div.post-image {
@@ -57,6 +59,11 @@ div.info {
 
 
 @media (min-width: 800px) {
+    div#content {
+        height: 45vh;
+        grid-template-columns: repeat(auto-fill, minmax(calc(25% - 2rem), 1fr));
+    }
+
     div#featured-news {
         display: grid;
         grid-template-areas: 

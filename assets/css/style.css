@@ -73,6 +73,43 @@ div.filter input#iFilter {
 
 }
 
+nav.pagination {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+button.pagination-button, button.pagination-number {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--cor5);
+    width: 4rem;
+    transition: all .2s ease-in-out;
+}
+
+button.pagination-button:hover, 
+button.pagination-number:hover {
+    cursor: pointer;
+    background-color: var(--cor5);
+    color: var(--cor2);
+}
+
+button.pagination-button.active, 
+button.pagination-number.active {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    border-color: var(--cor2);
+}
+
+div.pagination-numbers {
+    display: flex;
+    gap: 1rem;
+}
+
 
 @media (min-width: 800px) {
     main {
