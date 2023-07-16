@@ -1,7 +1,7 @@
 // Variáveis globais
-const itemsPerPage = 12; // Número de itens por página
-let currentPage = 1; // Página atual
-let totalPages = 0; // Total de páginas
+const itemsPerPage = 12;
+let currentPage = 1;
+let totalPages = 0;
 let jsonData = [];
 
 // Carregar os dados JSON
